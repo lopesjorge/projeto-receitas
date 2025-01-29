@@ -104,6 +104,15 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+#faz com que arquivos estáticos sejam carregado a partir da raiz do projeto
+#O django reconhece o caminho estático a partir da pasta base_static
+STATICFILES_DIRS = [
+    BASE_DIR / "base_static",
+]
+
+#Ao configurar essa opção, o django cria uma pasta static e carrega todos os arquivos estáticos em um único só lugar.
+STATIC_ROOT = BASE_DIR / "static"
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
