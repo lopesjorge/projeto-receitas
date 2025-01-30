@@ -110,6 +110,12 @@ STATICFILES_DIRS = [
     BASE_DIR / "base_static",
 ]
 
+#caminho dos arquivos estáticos para media
+MEDIA_URL = '/media/'
+
+#caminho dos arquivos estáticos para media na raiz
+MEDIA_ROOT = BASE_DIR / 'media/'
+
 #Ao configurar essa opção, o django cria uma pasta static e carrega todos os arquivos estáticos em um único só lugar.
 STATIC_ROOT = BASE_DIR / "static"
 
