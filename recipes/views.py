@@ -35,3 +35,7 @@ def recipe (request, recipe_id):
            'recipe': recipe,
            'is_detail_page': True,
         }) #name espace
+
+
+def search (request):
+    return render(request, 'recipes/pages/search.html')
