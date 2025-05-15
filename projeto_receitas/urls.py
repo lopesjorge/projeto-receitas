@@ -6,6 +6,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('recipes.urls')),
+    path('authors/', include('authors.urls')),
 ]
 
 #concatena o caminho para que o django apresente arquivos estáticos ao abrir no navegador separadamente
