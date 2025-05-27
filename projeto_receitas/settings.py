@@ -111,6 +111,7 @@ STATIC_URL = 'static/'
 #O django reconhece o caminho estático a partir da pasta base_static
 STATICFILES_DIRS = [
     BASE_DIR / "base_static",
+    BASE_DIR / "base_static/global/dist", 
 ]
 
 #caminho dos arquivos estáticos para media
