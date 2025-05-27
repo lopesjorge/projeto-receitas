@@ -29,7 +29,7 @@ media
 *$py.class
 
 # Distribution / packaging
-.node_modules
+node_modules
 .Python build/
 develop-eggs/
 dist/
